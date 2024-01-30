@@ -1,0 +1,56 @@
+body {
+    background-image: url("../nattfoto.jpg");
+    background-repeat: no-repeat;
+    background-size: fill;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "a1 a1 a1 a1 a1 a1 a1 a1"
+    "a2 a2 a2 a2 a2 a2 a2 a2"
+    "a3 a3 a3 a3 a3 a3 a3 a3"
+    "a4 a4 a4 a4 a4 a4 a4 a4";
+}
+
+article {
+    background-color: white;
+    color: black;
+    margin: 1rem;;
+    border-style: solid;
+    border-radius: 1rem;
+}
+
+li {
+    padding: 0.5rem;
+}
+
+h2 {
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+#banner {
+    grid-area: a1;
+    grid-column: 2 / 8;
+    color: black;
+    text-align: center;
+    background: white;
+    border-style: solid;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+#a2 {
+    grid-area: a2;
+}
+
+#a3 {
+    grid-area: a3;
+}
+
+#a4 {
+    grid-area: a4;
+}
